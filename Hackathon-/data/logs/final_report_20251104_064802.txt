@@ -1,0 +1,62 @@
+================================================================================
+                    SMART QUEUE ROUTING SYSTEM - FINAL REPORT
+================================================================================
+
+CONFIGURATION:
+--------------------------------------------------------------------------------
+Agents:              30
+Channels:            voice, chat, email
+Skills:              technical, billing, sales, general, vip
+Capacity Rules:      {'voice': 1, 'chat': 3, 'email': 5}
+
+RESULTS SUMMARY:
+--------------------------------------------------------------------------------
+
+CUCB-OTA:
+  Total Assignments:   1,086
+  Avg CSAT:            0.2844
+  Avg AHT:             7.98 min
+  SLA Met Rate:        45.56%
+  Fairness (Gini):     0.040
+  Dual Variables:
+    λ_aht:      0.046
+    λ_sla:      0.055
+    λ_fairness: 0.064
+
+FCFS:
+  Total Assignments:   917
+  Avg CSAT:            0.3120
+  Avg AHT:             7.92 min
+  SLA Met Rate:        47.63%
+  Fairness (Gini):     0.123
+  Dual Variables:
+    λ_aht:      0.117
+    λ_sla:      0.057
+    λ_fairness: 0.080
+
+Skill-Greedy:
+  Total Assignments:   926
+  Avg CSAT:            0.4023
+  Avg AHT:             7.42 min
+  SLA Met Rate:        53.03%
+  Fairness (Gini):     0.100
+  Dual Variables:
+    λ_aht:      0.000
+    λ_sla:      0.045
+    λ_fairness: 0.077
+
+
+IMPROVEMENT OVER FCFS:
+--------------------------------------------------------------------------------
+
+CUCB-OTA:
+  CSAT Uplift:      +-8.84%
+  AHT Reduction:    +-0.71%
+  SLA Improvement:  +-4.33%
+
+Skill-Greedy:
+  CSAT Uplift:      +28.96%
+  AHT Reduction:    +6.34%
+  SLA Improvement:  +11.35%
+
+================================================================================
