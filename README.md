@@ -188,9 +188,9 @@ print('✓ Config loaded')
 
 * Pavan Kumar
 * Sathwik K Bhat
-* Gagan Shetty
-* Aniketh
-* Pavan Kumar (Team Lead)
+* Swanjith
+* Deepak
+
 
 🏆 **Hackotsava 2025 Winners — Tetherfi Problem Statement**
 
